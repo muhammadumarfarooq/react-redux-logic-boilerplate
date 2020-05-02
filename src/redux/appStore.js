@@ -18,5 +18,5 @@ const composeMiddleware = compose(applyMiddleware(logicMiddleware));
 export default createStore(rootReducer, composeMiddleware);
 
 
-// NOTE: if we just using just redux and not redux-logic then export just this line and comment the above line
+// NOTE: if we using just redux and not any middleware then export just this line and comment the above line
 export default createStore(rootReducer, composeMiddleware);
