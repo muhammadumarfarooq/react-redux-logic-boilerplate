@@ -19,4 +19,4 @@ export default createStore(rootReducer, composeMiddleware);
 
 
 // NOTE: if we using just redux and not any middleware then export just this line and comment the above line
-export default createStore(rootReducer, composeMiddleware);
+// export default createStore(rootReducer, composeMiddleware);
