@@ -1,10 +1,16 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, getData } from '../redux/actions';
+import { increment, decrement, getData, initOAuth } from '../redux/actions';
 function App() {
   const dispatch = useDispatch();
   const counter = useSelector(state => state.counter);
   const data = useSelector(state => state.data);
+
+
+  React.useEffect(() => {
+    dispatch(initOAuth());
+  }, []);
+
 
   return (
     <div className="app">

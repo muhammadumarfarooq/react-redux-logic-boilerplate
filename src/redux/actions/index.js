@@ -13,7 +13,7 @@ export function getData() {
 }
 
 export function getDataSuccess(data) {
-  console.log(data);
+
   return {
     type: types.GET_DATA_SUCCESS,
     payload: data
@@ -23,5 +23,24 @@ export function getDataSuccess(data) {
 export function decrement() {
   return {
     type: types.DECREMENT
+  }
+}
+export function initOAuth() {
+  return {
+    type: types.INIT_O_AUTH,
+  }
+}
+
+export function initOAuthSuccess(data) {
+  return {
+    type: types.INIT_O_AUTH_SUCCESS,
+    payload: data
+  }
+}
+
+export function getAuthState(authState) {
+  return {
+    type: types.GET_AUTH_STATE,
+    payload: authState
   }
 }

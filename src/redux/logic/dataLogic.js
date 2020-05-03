@@ -10,7 +10,6 @@ const dataLogic = createLogic({
   async process({ getState, action }, dispatch, done) { //eslint-disable-line
 
     // // first logout from server,
-
     const response = await jsonPlaceholder.get('/todos')
     store.dispatch(getDataSuccess(response.data));
     done();
