@@ -18,21 +18,21 @@ const dataLogic = createLogic({
   }
 });
 
-const resetUserPasswordLogic = createLogic({
-  type: types.RESET_USER_PASSWORD,
-  latest: true,
-  process({ getState, action }, dispatch, done) { //eslint-disable-line
-    // axios.post(url + '/user/reset-password', {
-    //   username: action.payload.username,
-    //   password: action.payload.password,
-    //   str: action.payload.str
-    // })
-    //   .then((resp) => {
-    //     dispatch(statusActions.resetPasswordStatus(resp.data));
-    //     done();
-    //   });
-  }
-});
+// const resetUserPasswordLogic = createLogic({
+//   type: types.RESET_USER_PASSWORD,
+//   latest: true,
+//   process({ getState, action }, dispatch, done) { //eslint-disable-line
+//     // axios.post(url + '/user/reset-password', {
+//     //   username: action.payload.username,
+//     //   password: action.payload.password,
+//     //   str: action.payload.str
+//     // })
+//     //   .then((resp) => {
+//     //     dispatch(statusActions.resetPasswordStatus(resp.data));
+//     //     done();
+//     //   });
+//   }
+// });
 
 
 export default [

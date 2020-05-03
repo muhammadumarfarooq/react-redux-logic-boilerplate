@@ -5,8 +5,7 @@ function App() {
   const dispatch = useDispatch();
   const counter = useSelector(state => state.counter);
   const data = useSelector(state => state.data);
-  const state = useSelector(state => state);
-  console.log(state)
+
   return (
     <div className="app">
       <h1>{counter}</h1>
