@@ -12,8 +12,11 @@ const deps = {
 // create middleware
 const logicMiddleware = createLogicMiddleware(rootLogic, deps);
 
+// redux dev tools
+const componseEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+
 // prepare middleware to ensure Redux can use it 
-const composeMiddleware = compose(applyMiddleware(logicMiddleware));
+const composeMiddleware = componseEnhancers(applyMiddleware(logicMiddleware));
 
 export default createStore(rootReducer, composeMiddleware);
 

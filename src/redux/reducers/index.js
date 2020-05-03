@@ -16,16 +16,14 @@ function counterReducer(state = defaultState, action) {
   }
 }
 
-
 function dataReducer(state = [], action) {
   switch (action.type) {
     case types.GET_DATA_SUCCESS:
-      return [...state, action.payload];
+      return [...state, ...action.payload];
     default:
       return state;
   }
 }
-
 
 export default combineReducers({
   cart: () => "abc",
